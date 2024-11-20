@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="d-flex">
+        <!-- Sidebar -->
+        <nav class="sidebar bg-light p-3">
+            <h4>Kahf Tech</h4>
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a href="#" class="nav-link active">Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Overview</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Messages</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Notifications</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Support</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Settings</a>
+                </li>
+            </ul>
+            <div class="user-profile mt-auto">
+                <img src="https://via.placeholder.com/50" alt="User" class="rounded-circle">
+                <p>Tuhel Rana</p>
+                <small>tuhelrana@gmail.com</small>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="content p-4 flex-grow-1">
+            <header class="d-flex justify-content-between align-items-center mb-4">
+                <h2>Customers</h2>
+                <div>
+                    <button class="btn btn-outline-primary">Export CSV</button>
+                    <button class="btn btn-primary">Invite Customer</button>
+                </div>
+            </header>
+
+            <!-- Statistics -->
+            <div class="row mb-4">
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>General Customers</h5>
+                        <h2>11,450</h2>
+                        <span class="text-success">+2.15%</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Admins</h5>
+                        <h2>812</h2>
+                        <span class="text-danger">-0.34%</span>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card p-3">
+                        <h5>Creators</h5>
+                        <h2>83</h2>
+                        <span class="text-success">+1.18%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Table -->
+            <div class="card p-3">
+                <div class="table-responsive">
+                    <table class="table align-middle">
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Role</th>
+                                <th>Projects</th>
+                                <th>Status</th>
+                                <th>Enrolled</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Arlene McCoy</td>
+                                <td><span class="badge bg-secondary">General</span></td>
+                                <td>12/25</td>
+                                <td>Active</td>
+                                <td>May 12, 2019</td>
+                            </tr>
+                            <tr>
+                                <td>Brooklyn Simmons</td>
+                                <td><span class="badge bg-danger">Admin</span></td>
+                                <td>18/50</td>
+                                <td>Active</td>
+                                <td>August 7, 2017</td>
+                            </tr>
+                            <tr>
+                                <td>Cody Fisher</td>
+                                <td><span class="badge bg-warning">Creator</span></td>
+                                <td>27/100</td>
+                                <td>Active</td>
+                                <td>October 24, 2018</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
